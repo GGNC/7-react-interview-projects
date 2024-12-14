@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-800 text-slate-50;
+}
+@layer utilities {
+  .header {
+    @apply text-5xl text-center font-bold bg-gradient-to-r from-red-600 via-yellow-600 to-blue-700 text-transparent bg-clip-text;
+  }
+  .article-container {
+    @apply border-x-4 border-slate-300 m-4 rounded;
+  }
+  .article {
+    @apply text-lg text-justify  border-y border-slate-300 p-4 my-2;
+  }
+  .article_link {
+    @apply text-blue-600 hover:underline;
+  }
+  .article_score {
+    @apply text-red-500;
+  }
+  .article_by {
+    @apply text-green-500;
+  }
+}
