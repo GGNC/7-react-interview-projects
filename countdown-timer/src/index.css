@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-800 text-slate-100;
+}
+@layer utilities {
+  .timer-container {
+    @apply w-full mt-20 flex flex-col justify-center items-center gap-2;
+  }
+  .header {
+    @apply p-4 text-5xl font-bold inline-block bg-gradient-to-r from-cyan-500 to-fuchsia-800 text-transparent bg-clip-text;
+  }
+  .timer {
+    @apply text-8xl font-bold;
+  }
+  .timer_button-container {
+    @apply mt-12 flex justify-start items-center gap-12;
+  }
+  .timer_button {
+    @apply w-32 px-4 py-2 text-2xl font-extrabold border-2 rounded-lg ring-4 hover:ring-8 transition-all;
+  }
+  .timer_button-green {
+    @apply bg-green-500 ring-green-900 timer_button;
+  }
+  .timer_button-orange {
+    @apply bg-orange-500 ring-orange-900 timer_button;
+  }
+  .timer_button-blue {
+    @apply bg-blue-500 ring-blue-900 timer_button;
+  }
+}
