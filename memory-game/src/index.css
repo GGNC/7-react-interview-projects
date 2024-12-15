@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-800 text-slate-100;
+}
+
+@layer utilities {
+  .header {
+    @apply p-4 inline-block text-5xl text-center text-transparent font-extrabold uppercase bg-clip-text bg-gradient-to-r from-red-600 via-purple-600 to-emerald-600;
+  }
+  .tile-container {
+    @apply grid grid-cols-3 sm:grid-cols-4 gap-2;
+  }
+  .tile {
+    @apply rounded-lg shadow-lg w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-56 lg:h-56;
+  }
+  .tile_img_holder {
+    @apply w-full h-full rounded-lg bg-gray-500 hover:bg-gray-400 cursor-pointer;
+  }
+  .tile_img {
+    @apply w-full h-full object-cover rounded-lg;
+  }
+  .winning-text {
+    @apply text-2xl text-center text-white font-bold fixed top-0 right-0 m-4 border-2 rounded-lg px-4 py-2;
+  }
+}
