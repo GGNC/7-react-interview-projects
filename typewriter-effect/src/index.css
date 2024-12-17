@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-800 text-slate-100;
+}
+
+@layer utilities {
+  .page-container {
+    @apply container mx-auto flex flex-col justify-start items-center;
+  }
+  .header {
+    @apply inline-block p-4 text-5xl text-transparent font-bold bg-gradient-to-r bg-clip-text from-indigo-700 via-zinc-700 to-violet-600;
+  }
+  .form-container {
+    @apply m-2 flex justify-evenly items-center min-w-96;
+  }
+  .form_input {
+    @apply px-4 py-2 rounded-lg bg-slate-100 text-gray-800;
+  }
+  .form_button {
+    @apply px-4 py-2 rounded-lg bg-indigo-500 text-slate-100 ring-2 ring-indigo-700 hover:ring-4 transition-all;
+  }
+  .typewriter-container {
+    @apply p-0 flex justify-start items-start min-w-72 max-w-96;
+  }
+}
